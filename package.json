@@ -1,0 +1,38 @@
+{
+  "name": "grpc-network",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node -- ./app/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chia Yu Pai (Ryyass)",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.35",
+    "babel-eslint": "^8.0.3",
+    "bluebird": "^3.5.1",
+    "grpc": "^1.8.0",
+    "level": "^2.1.1",
+    "winston": "^3.0.0-rc1",
+    "yargs": "^10.0.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.35",
+    "@babel/core": "^7.0.0-beta.35",
+    "@babel/node": "^7.0.0-beta.35",
+    "@babel/plugin-transform-flow-strip-types": "^7.0.0-beta.35",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.35",
+    "@babel/preset-env": "^7.0.0-beta.35",
+    "@babel/preset-stage-2": "^7.0.0-beta.35",
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-flowtype": "^2.39.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1",
+    "flow-bin": "^0.60.1",
+    "nodemon": "^1.13.3"
+  }
+}

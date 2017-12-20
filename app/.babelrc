@@ -1,0 +1,15 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "browsers": ["last 2 versions"],
+        "node": "current",
+      },
+    }],
+    "@babel/preset-stage-2",
+  ],
+  "plugins": [
+    "@babel/transform-runtime",
+    "@babel/transform-flow-strip-types",
+  ],
+}

@@ -1,0 +1,36 @@
+// awara.proto
+
+syntax = "proto3";
+
+package awara;
+
+service NetworkService {
+  rpc Ping (PingRequest) returns (PingReply) {}
+  rpc GetPeers (GetPeersRequest) returns (GetPeersResponse) {}
+  rpc FoundPeer (FoundPeerRequest) returns (FoundPeerResponse) {}
+}
+
+// Ping
+message PingRequest {}
+
+message PingReply {
+  string message = 1;
+}
+
+// GetPeers
+message Peer {
+  string endpoint = 1;
+}
+
+message GetPeersRequest {}
+
+message GetPeersResponse {
+  repeated Peer peers = 1;
+}
+
+// FoundPeer
+message FoundPeerRequest {
+  string endpoint = 1;
+}
+
+message FoundPeerResponse {}
